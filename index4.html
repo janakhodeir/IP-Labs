@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pro To-Do List</title>
+  <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+
+  <h1>📝 My To-Do List</h1>
+
+  <div class="input-section">
+    <input type="text" id="taskInput" placeholder="Enter task...">
+    <button id="addBtn">➕</button>
+  </div>
+
+  <!-- FILTER BUTTONS -->
+  <div class="filters">
+    <button onclick="setFilter('all', event)">All</button>
+    <button onclick="setFilter('completed', event)">Completed</button>
+    <button onclick="setFilter('incomplete', event)">Incomplete</button>
+  </div>
+
+  <!-- SORT BUTTONS -->
+  <div class="sort">
+    <button onclick="sortTasks('name')">Sort A-Z</button>
+    <button onclick="sortTasks('time')">Sort by Time</button>
+  </div>
+
+  <ul id="taskList"></ul>
+
+  <script src="scrript4.js"></script>
+</body>
+</html>

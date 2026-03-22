@@ -1,0 +1,87 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.input-section {
+  margin: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin: 10px auto;
+  padding: 10px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* TRANSITION (UI UPGRADE) */
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-info {
+  flex: 1;
+  text-align: left;
+}
+
+.icons button {
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+
+/* Default button */
+.filters button {
+  background: #ddd;
+  border: none;
+  transition: 0.3s;
+}
+
+/* Active filter */
+.filters button.active {
+  color: white;
+}
+
+/* Different colors per filter */
+.filters button:nth-child(1).active {
+  background: #333; /* All */
+}
+
+.filters button:nth-child(2).active {
+  background: green; /* Completed */
+}
+
+.filters button:nth-child(3).active {
+  background: red; /* Incomplete */
+}
